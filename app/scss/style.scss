@@ -31,10 +31,13 @@
     padding-right: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-
     // background:linear-gradient(45deg,red,blue) border-box; 
-
-
+  }
+  &__logo-image{
+    max-width: 134px;
+    max-height: 134px;
+    width: 100%;
+    height: 100%;
   }
 }
 .container {
@@ -83,12 +86,11 @@
     justify-content: center;
     width: 100%;
   }
-  &__link {
+  &__button-link {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-decoration: none;
     color: #d7d2d2;
     background: radial-gradient(
       177.51% 177.51% at 50% 50%,
@@ -97,13 +99,58 @@
       #000000 100%
     );
     border-radius: 90px;
+    text-decoration:  none;
+  }
+  &__button{
+    
   }
   &__list {
+    display: flex;
     list-style: none;
+    max-width: 72vw;
+    max-height:70vh;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
   }
   &__name {
     color: #ffffff;
     padding: 50px 100px 50px 100px;
+  }
+  &__item-text{
+    text-align: center;
+
+    text-decoration: none;
+  }
+}
+
+.footer{
+  margin-top: 100px;
+  margin-left: 26px;
+  &__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__button-link{
+    background: linear-gradient(
+      90deg,
+      #465b98 -27.66%,
+      rgba(70, 91, 152, 0) 125.6%
+    );
+    border-radius: 50px 0px 0px 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ffffff;
+
+  }
+  &__list{
 
   }
 }

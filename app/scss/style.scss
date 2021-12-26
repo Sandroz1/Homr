@@ -4,12 +4,30 @@
 @import "fonts";
 @import "media";
 
+
+.container{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
 .header {
+  max-height: 15vh;
+  height: 100%;
+  width: 100%;
   &__inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 20px;
+    margin-right: 20px;
+    
+
+
   }
   &__input {
     text-decoration: none;
@@ -20,6 +38,12 @@
     background-color: inherit;
     border:none;
   }
+  &__input:hover{
+    cursor: pointer;
+  }
+  &__dropdown:hover{
+    cursor: pointer;
+  }
   &__dropdown{
     background: linear-gradient(
       90deg,
@@ -27,10 +51,7 @@
       rgba(70, 91, 152, 0) 125.6%
     );
     border-radius: 0px 0px 50px 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
     // background:linear-gradient(45deg,red,blue) border-box; 
   }
   &__logo-image{
@@ -40,44 +61,57 @@
     height: 100%;
   }
 }
-.container {
+.holder {
   display: flex;
   height: 100%;
   width: 100%;
+  max-height: 70vh;
+
 }
+
 .nav {
   height: 100%;
   &__inner {
     height: 100%;
+    padding-top: 20px;
   }
   &__buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    margin-top: 62px;
   }
-  &__button-link {
-    display: flex;
-
+  &__button{
+    display: block;
+    max-width: 20vw;
+    max-height: 10vh;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  &__button-text{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     background: linear-gradient(
       90deg,
       #465b98 -27.66%,
       rgba(70, 91, 152, 0) 125.6%
     );
-    max-width: 120px;
+    // max-width: 120px;
     border-radius: 0px 50px 50px 0px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
     border: #ffff;
     font-weight: 900;
     font-size: 30px;
     line-height: 35px;
     color: #ffffff;
   }
+
+ 
 }
 .main {
   width: 100%;
@@ -116,7 +150,7 @@
   }
   &__name {
     color: #ffffff;
-    padding: 50px 100px 50px 100px;
+
   }
   &__item-text{
     text-align: center;
@@ -126,8 +160,10 @@
 }
 
 .footer{
-  margin-top: 100px;
-  margin-left: 26px;
+
+  margin-left: 1.81%;
+  &__inner{
+  }
   &__buttons{
     display: flex;
     flex-direction: row;
@@ -139,11 +175,9 @@
       #465b98 -27.66%,
       rgba(70, 91, 152, 0) 125.6%
     );
+    text-decoration:none;
     border-radius: 50px 0px 0px 0px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
     font-weight: 900;
     font-size: 30px;
     line-height: 35px;
